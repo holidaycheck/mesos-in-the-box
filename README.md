@@ -1,4 +1,4 @@
-dust-local
+mesos-in-the-box
 ==========
 
 Setup of our dust cluster based on docker images.
