@@ -16,7 +16,7 @@ This setup has:
  - 1 instance of mesos-slave  ver 0.23.0
  - 1 instance of marathon ver 0.9.1
  - 1 instance of chronos ver 2.4.0
- - 1 instance of bamboover 0.2.14  with haproxy ver 1.5.14
+ - 1 instance of bamboo ver 0.2.14  with haproxy ver 1.5.14
 
 
 Usage
