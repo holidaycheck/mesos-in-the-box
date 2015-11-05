@@ -24,7 +24,19 @@ Usage
 
 To run this cluster you need to have **docker 1.8.0** and **docker-compose 1.2.0** installed.
 Checkout this repository and run **docker-compose up -d** inside.
+
 Sometimes due to random order of pulling docker images bamboo enters locked state while not able to find zookeeper. If experienced try to run **docker-compose restart**
+
+Example deploy
+==============
+
+To deploy example container (Ghost blogging platform) enter following command:
+
+curl -X POST -H "Content-Type: application/json" http://localhost:8080/v2/apps -d@ghost.json
+
+Afterwards navigate to http://localhost:8000 and set desired mapping ACL for haproxy (for example "path_beg -i /").
+
+If you now navigate to http://localhost you should be able to see the app.
 
 Notice
 ======
