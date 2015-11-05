@@ -1,11 +1,11 @@
 mesos-in-the-box
 ==========
 
-Setup of our dust cluster based on docker images.
+Setup of HolidayCheck AG "dust project" cluster based on docker images.
 
-This setup was made as a PoC to see if rollout of dust infrastructure is possible via dockers only.
+This setup was made as a PoC to see if rollout of mesos+marathon+infrastructure infrastructure is possible via dockers only.
 
-Also it can serve as a temporary mesos cluster.
+Also it can serve as a temporary mesos cluster for experimental and development purposes.
 
 Setup
 =====
@@ -22,9 +22,9 @@ This setup has:
 Usage
 =====
 
-To run this cluster you need to have **docker 1.8.0 ** and **docker-compose 1.2.0** installed.
+To run this cluster you need to have **docker 1.8.0** and **docker-compose 1.2.0** installed.
 Checkout this repository and run **docker-compose up -d** inside.
-Healthchecks for containers can now be defined.
+Sometimes due to random order of pulling docker images bamboo enters locked state while not able to find zookeeper. If experienced try to run **docker-compose restart**
 
 Notice
 ======
@@ -35,7 +35,7 @@ Therefore ensure these ports are available:
  - 5050, 5051 (mesos master and slave)
  - 8080 (marathon)
  - 4400 (chronos)
- - 80, 8000 (haproxy and bamboo)
+ - 80, 8000 (haproxy, bamboo)
 
 Links
 =====
@@ -59,3 +59,4 @@ Used repositiories and docker images:
  - https://hub.docker.com/r/mesoscloud/zookeeper/
  - https://hub.docker.com/r/mesoscloud/marathon/
  - https://github.com/QubitProducts/bamboo
+
