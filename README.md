@@ -3,7 +3,7 @@ mesos-in-the-box
 
 Setup of HolidayCheck AG "dust project" cluster based on docker images.
 
-This setup was made as a PoC to see if rollout of mesos+marathon+infrastructure infrastructure is possible via dockers only.
+This setup was made as a PoC to see if rollout of mesos+marathon+docker infrastructure is possible via dockers only.
 
 Also it can serve as a temporary mesos cluster for experimental and development purposes.
 
