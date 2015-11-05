@@ -22,7 +22,7 @@ This setup has:
 Usage
 =====
 
-To run this cluster you need to have **docker 1.8.0** and **docker-compose 1.2.0** installed.
+To run this cluster you need to have **Linux**, **docker 1.8.0** and **docker-compose 1.2.0** installed (Mac users running boot2docker please adjust address setting in docker-compose.yml from localhost to proper IP).
 Checkout this repository and run **docker-compose up -d** inside.
 
 Sometimes due to random order of pulling docker images bamboo enters locked state while not able to find zookeeper. If experienced try to run **docker-compose restart**
