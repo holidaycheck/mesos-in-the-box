@@ -12,11 +12,11 @@ Setup
 
 This setup has:
  - 1 instance of zookeeper ver 3.4.6
- - 1 instance of mesos-master ver 0.23.0
- - 1 instance of mesos-slave  ver 0.23.0
- - 1 instance of marathon ver 0.9.1
+ - 1 instance of mesos-master ver 0.24.1
+ - 1 instance of mesos-slave  ver 0.24.1
+ - 1 instance of marathon ver 0.11.0
  - 1 instance of chronos ver 2.4.0
- - 1 instance of bamboo ver 0.2.14  with haproxy ver 1.5.14
+ - 1 instance of bamboo ver 0.2.15  with haproxy ver 1.5.15
 
 
 Usage
