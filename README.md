@@ -12,9 +12,9 @@ Setup
 
 This setup has:
  - 1 instance of zookeeper ver 3.4.6
- - 1 instance of mesos-master ver 0.24.1
- - 1 instance of mesos-slave  ver 0.24.1
- - 1 instance of marathon ver 0.11.0
+ - 1 instance of mesos-master ver 0.26.0
+ - 1 instance of mesos-slave  ver 0.26.0
+ - 1 instance of marathon ver 0.15.2
  - 1 instance of chronos ver 2.4.0
  - 1 instance of bamboo ver 0.2.15  with haproxy ver 1.5.15
 
@@ -65,10 +65,10 @@ Credits
 =======
 
 Used repositiories and docker images:
- - https://hub.docker.com/r/mesoscloud/mesos-master/
- - https://hub.docker.com/r/mesoscloud/mesos-slave/
+ - https://hub.docker.com/r/mesosphere/mesos-master/
+ - https://hub.docker.com/r/mesosphere/mesos-slave-dind/
  - https://hub.docker.com/r/mesoscloud/chronos/
  - https://hub.docker.com/r/mesoscloud/zookeeper/
- - https://hub.docker.com/r/mesoscloud/marathon/
+ - https://hub.docker.com/r/mesosphere/marathon/
  - https://github.com/QubitProducts/bamboo
 
