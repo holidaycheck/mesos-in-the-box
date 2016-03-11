@@ -6,7 +6,7 @@ zookeeper:
      - SERVERS=localhost
 
 master:
-  image: mesoscloud/mesos-master:0.24.1-ubuntu-14.04
+  image: mesosphere/mesos-master:0.26.0-0.2.145.ubuntu1404
   net: host
   environment:
     - MESOS_HOSTNAME=localhost
@@ -15,12 +15,13 @@ master:
     - MESOS_ZK=zk://localhost:2181/mesos
 
 slave:
-  image: mesoscloud/mesos-slave:0.24.1-ubuntu-14.04
+  image: mesosphere/mesos-slave-dind:0.2.4_mesos-0.26.0_docker-1.8.2_ubuntu-14.04.3
   net: host
   privileged: true
   environment:
     - MESOS_HOSTNAME=localhost
     - MESOS_IP=127.0.0.1
+    - MESOS_PORT=5051
     - MESOS_MASTER=zk://localhost:2181/mesos
     - MESOS_CONTAINERIZERS=docker,mesos
   volumes:
@@ -28,7 +29,7 @@ slave:
     - /var/run/docker.sock:/var/run/docker.sock
 
 marathon:
-  image: mesoscloud/marathon:0.11.0-ubuntu-15.04
+  image: docker-registry.hc.ag/opseng/marathon:v0.15.2
   net: host
   environment:
     - MARATHON_HOSTNAME=127.0.0.1
@@ -44,7 +45,7 @@ chronos:
    - CHRONOS_HTTP_PORT=4400
    - CHRONOS_MASTER=zk://localhost:2181/mesos
    - CHRONOS_ZK_HOSTS=localhost:2181
-    
+
 bamboo:
   net: host
   image: luprzybyl/bamboo:0.2.15
@@ -54,4 +55,3 @@ bamboo:
    - BAMBOO_ZK_HOST=localhost:2181
    - BAMBOO_ZK_PATH=/bamboo
    - BAMBOO_DOCKER_AUTO_HOST=true
-
