@@ -48,7 +48,7 @@ chronos:
 
 bamboo:
   net: host
-  image: luprzybyl/bamboo:0.2.15
+  image: luprzybyl/bamboo:0.2.21_afdcb6b
   environment:
    - MARATHON_ENDPOINT=http://localhost:8080
    - BAMBOO_ENDPOINT=http://localhsot:8000
