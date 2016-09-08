@@ -12,17 +12,17 @@ Setup
 
 This setup has:
  - 1 instance of zookeeper ver 3.4.6
- - 1 instance of mesos-master ver 0.26.0
- - 1 instance of mesos-slave  ver 0.26.0
- - 1 instance of marathon ver 0.15.2
+ - 1 instance of mesos-master ver 0.28.2
+ - 1 instance of mesos-slave  ver 0.28.2
+ - 1 instance of marathon ver 1.1.3
  - 1 instance of chronos ver 2.4.0
- - 1 instance of bamboo ver 0.2.15  with haproxy ver 1.5.15
+ - 1 instance of bamboo ver 0.2.21  with haproxy ver 1.5.8
 
 
 Usage
 =====
 
-To run this cluster you need to have **Linux**, **docker 1.8.0** and **docker-compose 1.2.0** installed (Mac users running boot2docker please adjust address setting in docker-compose.yml from localhost to proper IP).
+To run this cluster you need to have **Linux**, **docker 1.10.0** and **docker-compose 1.7.0** installed (Mac users running boot2docker please adjust address setting in docker-compose.yml from localhost to proper IP).
 Checkout this repository and run **docker-compose up -d** inside.
 
 Sometimes due to random order of pulling docker images bamboo enters locked state while not able to find zookeeper. If experienced try to run **docker-compose restart**
@@ -66,7 +66,7 @@ Credits
 
 Used repositiories and docker images:
  - https://hub.docker.com/r/mesosphere/mesos-master/
- - https://hub.docker.com/r/mesosphere/mesos-slave-dind/
+ - https://hub.docker.com/r/mesosphere/mesos-slave/
  - https://hub.docker.com/r/mesoscloud/chronos/
  - https://hub.docker.com/r/mesoscloud/zookeeper/
  - https://hub.docker.com/r/mesosphere/marathon/
