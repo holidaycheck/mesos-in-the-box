@@ -12,9 +12,9 @@ Setup
 
 This setup has:
  - 1 instance of zookeeper ver 3.4.6
- - 1 instance of mesos-master ver 0.28.2
- - 1 instance of mesos-slave  ver 0.28.2
- - 1 instance of marathon ver 1.1.3
+ - 1 instance of mesos-master ver 1.0.11.0.1-2.0.93.ubuntu1404
+ - 1 instance of mesos-slave  ver 1.0.11.0.1-2.0.93.ubuntu1404
+ - 1 instance of marathon ver 1.3.0-RC6
  - 1 instance of chronos ver 2.4.0
  - 1 instance of bamboo ver 0.2.21  with haproxy ver 1.5.8
 
